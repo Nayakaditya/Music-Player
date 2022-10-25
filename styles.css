@@ -1,0 +1,987 @@
+body {
+    margin: 0;
+    color: white;
+    /* background-color: var(--body-color); */
+    background-image: url(https://wallpaper.dog/large/973643.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+:root {
+    --bg-color: none;
+    --border: 2px solid darkred;
+    --width-100: 100%;
+    --margin-top-65: 65px;
+    --margin-left-45: 45px;
+    --justify-content-center: center;
+    --justify-content-between: space-between;
+    --justify-content-around: space-around;
+    --body-color: #0d0f28;
+    --body-secondary-color: #16193c;
+    /* --color-white: white; */
+}
+
+/* navbar starts */
+nav {
+    height: auto;
+    background-color: var(--bg-color);
+    /* border: var(--border); */
+}
+.navbar-brand img{
+    animation: rotate360 2s linear infinite;
+}
+
+input::placeholder {
+    color: var(--color-white);
+}
+
+input[type=search] {
+    color: white;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 3px 6px 3px 32px;
+    border: 1px solid;
+    font-size: 13px;
+    background-color: #2b2b2d;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+form::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    /* color: var(--color-white); */
+    position: relative;
+    left: 28px;
+    top: 2px;
+    z-index: 2;
+}
+
+form::after {
+    content: '\f130';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    /* color: var(--color-white); */
+    position: relative;
+    right: 30px;
+    top: 2px;
+    z-index: 2;
+}
+
+.notification-bell-icon {
+    /* color: var(--color-white); */
+    cursor: pointer;
+}
+
+.notification-bell-icon i:hover {
+    animation: animate .4s 3;
+}
+
+/* keyframes */
+@keyframes animate {
+
+    0%,
+    50% {
+        transform: rotate(40deg);
+    }
+
+    60%,
+    100% {
+        transform: rotate(-40deg);
+    }
+}
+
+
+@keyframes rotate360 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.profile-picture-navbar {
+    margin-left: 30px;
+}
+
+/* navbar ends */
+
+/* main starts*/
+#main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+main {
+    width: 70%;
+    margin-right: 20px;
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* class-A starts */
+.class-A {
+    margin-left: var(--margin-left-45);
+    width: var(--width-100);
+    height: auto;
+}
+
+#figure-container {
+    width: 100%;
+    margin-left: var(--margin-left-45);
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ca-img {
+    padding: 10px;
+    width: 288px;
+}
+
+
+/* class-A ends */
+/* class-B starts */
+.class-B-container {
+    margin-left: var(--margin-left-45);
+}
+
+.class-B-container h1 {
+    font-size: 1.4em;
+}
+
+.class-B {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-b {
+    min-width: 220px;
+    width: 45%;
+    height: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: [first-col] 30% [mid-col] 60% [last-col] 10% [end];
+}
+
+.artist-img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#footer-section:target {
+    display: block;
+}
+
+.artist-img img:hover,
+.class-c:hover {
+    mix-blend-mode: exclusion;
+}
+
+.more-rating i {
+    position: relative;
+    left: 70%;
+    top: 0;
+}
+
+.more-rating p {
+    position: relative;
+    left: 30%;
+}
+
+i {
+    cursor: pointer;
+}
+
+.dropdown-menu-listing {
+    display: grid;
+    grid-template-columns: [first] 15% [last] auto;
+    place-items: start;
+    justify-content: start;
+}
+
+.listing-menu a {
+    color: transparent;
+    text-decoration: none;
+}
+
+.listing-menu ul span li a {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+/* class-B ends */
+/* class-C starts */
+.class-C-container h1 {
+    font-size: 1.4em;
+}
+
+.class-C-container {
+    width: 100%;
+    margin-top: var(--margin-top-65);
+    margin-left: var(--margin-left-45);
+}
+
+.class-C {
+    width: var(--width-100);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-c {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+
+.class-C div h5 {
+    font-size: 1.1em;
+}
+
+.class-C #id-1 {
+    background-image: url(https://ichef.bbci.co.uk/news/976/cpsprodpb/6D5B/production/_124059972_hi074918078.jpg);
+}
+
+.class-C #id-2 {
+    background-image: url(https://miro.medium.com/max/471/0*_YcTdWCkDbiz2-yC.png);
+}
+
+.class-C #id-3 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg);
+}
+
+.class-C #id-4 {
+    background-image: url(https://wallpaperaccess.com/full/1764263.jpg);
+}
+
+.class-C #id-5 {
+    background-image: url(https://www.famousbirthsdeaths.com/wp-content/uploads/2017/12/imagine-dragons-bio-net-worth-facts.jpg);
+}
+
+.class-C #id-6 {
+    background-image: url(https://media1.popsugar-assets.com/files/thumbor/93NhPzUIVRCK72ePIHlUOei4sKc/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/01/30/882/n/1922398/845283ed5a70d15cb96170.73904499_edit_img_image_44540477_1517339888/i/Bruno-Mars-Through-Years-Pictures.jpg);
+}
+
+
+/* class-C ends */
+/* class-D starts */
+.class-D {
+    margin-top: var(--margin-top-65);
+    margin-left: var(--margin-left-45);
+    width: var(--width-100);
+    height: auto;
+    background-color: #2b2b2d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-d {
+    display: grid;
+    place-items: center;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-size: cover;
+    opacity: .8;
+    background-repeat: no-repeat;
+    margin: 15px;
+    mix-blend-mode: luminosity;
+    cursor: pointer;
+}
+
+.class-d:hover {
+    mix-blend-mode: normal;
+}
+
+.class-D #id-1 {
+    opacity: 1;
+    background-image: url(https://thumbs.dreamstime.com/z/poster-music-festival-orange-background-cassete-tape-player-cassette-tape-poster-music-festival-orange-background-110212794.jpg);
+}
+
+.class-D #id-2 {
+    background-image: url(https://i.pinimg.com/originals/2f/9d/95/2f9d9562eb2252ae132b4bf8258aa18a.jpg);
+}
+
+.class-D #id-3 {
+    background-image: url(https://media.istockphoto.com/photos/vintage-green-portable-radio-sitting-on-wood-table-picture-id184659484?k=20&m=184659484&s=612x612&w=0&h=1ArO5iFKbGd3BjzUrrwNuugO3y4K7UNGUmkwIgjHqwg=);
+}
+
+.class-D #id-4 {
+    background-image: url(https://images.alphacoders.com/956/9563.jpg);
+}
+
+.class-D #id-5 {
+    background-image: url(https://i.insider.com/5b33f35e1ae66234008b4ab4?width=1000&format=jpeg&auto=webp);
+}
+
+.class-D #id-6 {
+    background-image: url(https://media.istockphoto.com/vectors/rock-sign-gesture-with-lightning-for-your-design-vector-id1183921035?k=20&m=1183921035&s=612x612&w=0&h=No2Ez2fPgiaDu1RiGywo5kF38g_r26g5ZDq1WuBml6w=);
+}
+
+.class-D #id-7 {
+    background-image: url(https://cutewallpaper.org/23/michael-jackson-dancing-wallpaper-iphone/2483429602.jpg);
+}
+
+.class-D #id-1 {
+    border-radius: 0px;
+}
+
+/* class-D ends */
+/* class-E starts */
+.class-E {
+    margin-top: var(--margin-top-65);
+    margin-left: var(--margin-left-45);
+    width: var(--width-100);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-e {
+    width: 19.5vw;
+    height: 13vw;
+    overflow: hidden;
+    min-width: 123px;
+    min-height: 82px;
+    margin: 10px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.class-e .inner-div {
+    font-size: 2em;
+    /* color: rgb(255, 255, 255); */
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-div {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.inner-div:hover {
+    scale: 1.2;
+    transition: all ease-in-out 0.3s;
+}
+
+.class-E .class-e:nth-child(1) .inner-div {
+    background-image: url(https://media.istockphoto.com/photos/dancing-at-disco-picture-id535403859?k=20&m=535403859&s=612x612&w=0&h=vurca_yUrEj-VrDYsAejoEuS2h3YzrppFbxNq_kBZd0=);
+}
+
+.class-E .class-e:nth-child(2) .inner-div {
+    background-image: url(https://spillmagazine.com/wp-content/uploads/2018/06/Electronic-Music.jpg);
+}
+
+.class-E .class-e:nth-child(3) .inner-div {
+    background-image: url(https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190425170948/friends-on-road-trip.jpg);
+}
+
+/* class-E ends */
+/* class-F starts */
+.class-F-container {
+    width: var(--width-100);
+    margin-top: var(--margin-top-65);
+    margin-left: var(--margin-left-45);
+}
+
+.class-F-container h1 {
+    font-size: 1.4em;
+}
+
+.class-F {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-f {
+    width: 117px;
+    height: 117px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.class-f img:hover{
+    box-shadow: 0px 0px 10px 5px rgb(143, 142, 142);
+}
+address {
+    font-weight: 200;
+}
+
+/* class-F ends */
+/* class-G starts */
+.class-G-container {
+    width: var(--width-100);
+}
+
+.class-G-container h1 {
+    font-size: 1.4em;
+    margin-top: var(--margin-top-65);
+    margin-left: var(--margin-left-45);
+
+}
+
+.class-G {
+    margin-left: var(--margin-left-45);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-g {
+    width: 117px;
+    height: 117px;
+    background-size: cover;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.class-g:hover{
+    box-shadow: 0px 0px 10px 5px rgb(143, 142, 142);
+}
+
+.class-G div #id-1 {
+    background-image: url(https://cdn.celpox.com/bby_uploads/celeb/5ab8baa88e5b54d2e2ce62913d8f23b9.jpg);
+}
+
+.class-G div #id-2 {
+    background-image: url(https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2019/03/p0559j1p-1553278070.jpg);
+}
+
+.class-G div #id-3 {
+    background-image: url(https://c.saavncdn.com/839/Sun-Bhi-Le-Hindi-2021-20211129092349-500x500.jpg);
+}
+
+.class-G div #id-4 {
+    background-image: url(https://c.ndtvimg.com/2021-12/7dd8dh3o_slow-slow_625x300_07_December_21.jpg);
+}
+
+.class-G div #id-5 {
+    background-image: url(https://pbs.twimg.com/media/FcNrusfacAMYGSI?format=jpg&name=large);
+}
+
+.class-G div #id-6 {
+    background-image: url(https://starwikibio.com/wp-content/uploads/2020/12/dino-james-image.jpg);
+}
+
+
+/* class-G ends  */
+/* main ends */
+
+
+/* aside starts */
+aside {
+    width: 25%;
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+}
+#aside-container{
+    height: 80vh;
+    overflow: scroll;
+}
+
+#aside-container::-webkit-scrollbar{
+    background: transparent;
+}
+
+#aside-container::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,rgb(50, 50, 50));
+    border-radius: 10px;
+}
+
+#aside-container::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,rgb(66, 66, 66));
+}
+.queue-word {
+    margin-left: 7%;
+}
+
+.queue {
+    margin-top: -40px;
+    float: right;
+    margin-right: 10%;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+
+.queue-heading .dropdown-menu-listing {
+    display: grid;
+    place-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+
+.queue::after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.class-z {
+    display: grid;
+    grid-template-columns: [first-col] 10% [second-col] 15% [third-col] 70% [last-col] auto [end];
+    min-width: 9rem;
+    width: 90%;
+    height: 80px;
+    margin: 10px;
+}
+
+.class-z .num {
+    font-weight: 200;
+}
+
+.class-z img {
+    width: 100%;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.class-z .queue-singer {
+    margin-left: 8%;
+}
+
+.class-z .queue-singer address {
+    margin-top: -10px;
+}
+
+.lightgrey-color {
+    color: lightslategray;
+}
+
+.class-z i:hover,
+.music-list i:hover {
+    scale: 1.1;
+    color: rgb(255, 27, 107);
+    cursor: pointer;
+}
+
+.center-align {
+    align-self: center;
+}
+
+/* aside ends */
+
+
+
+
+/* footer section */
+/* Description part */
+#footer-section {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #282828;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+    padding: 0px 3%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.active-song {
+    height: 90%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#song-img {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+#song-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.song-desc {
+
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.song-desc div:nth-child(1) {
+    font-size: 14px;
+}
+
+.song-desc div:nth-child(2) {
+    font-size: 12px;
+}
+
+.song-icons {
+    height: 100%;
+    padding-top: 4%;
+}
+
+/* music player part */
+.music-player {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.controls {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+#slider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.time {
+    margin: 0px 10px;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+input[type="range" i] {
+    cursor: default;
+    color: -internal-light-dark(rgb(16, 16, 16), rgb(255, 255, 255));
+    padding: initial;
+    border: initial;
+    margin: 2px;
+}
+
+/* extras part */
+.extra {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/* singlePlaylistPage */
+#playlist-aside{
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+}
+.artist-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    background-color: #16193c;
+}
+
+.artist-pic {
+    background-image: url(https://cdns-images.dzcdn.net/images/artist/e65d62ecd00b8bf1ba89073943ac62a1/500x500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 500px;
+}
+
+.artist-summary {
+    margin-left: 30px;
+    margin-top: 10rem;
+    width: 60%;
+}
+
+.play-btn {
+    padding: 0 2rem;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(93deg, #3b30b4, #bc56d6);
+}
+
+.artist-summary span a {
+    text-decoration: none;
+    color: grey;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+.music-list-container {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.music-list {
+    display: grid;
+    grid-template-columns: [first-col] 5% [sec-col] 10% [third-col] 69% [fourth-col] 8% [fifth-col] 8% [end];
+    height: 15%;
+    margin-bottom: 10px;
+    background-color: #1a1f33;
+    align-items: center;
+}
+
+.music-list span img {
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;    
+}
+
+.music-list:hover {
+    background-color: #202539;
+}
+
+#similar-artist{
+    height: 36vh;
+    overflow: scroll;
+
+}
+
+#similar-artist::-webkit-scrollbar{
+    display: none;
+}
+
+.artist-music-list{
+    width: 97%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: [first-col] 30% [mid-col] 60% [last-col] 10% [end];
+}
+
+
+#recent-played{
+    height: 36vh;
+    overflow: scroll;
+}
+
+#recent-played::-webkit-scrollbar{
+    display: none   ;
+}
+
+/* singlePlaylistPage ends */
+
+/*media queries starts here*/
+
+@media (min-width: 992px) {
+   
+    figure span img:hover {
+        scale: 1.2;
+        transition: all .3s ease-in-out;
+    }
+    
+}
+
+/*small device (landscape phones, 576px and down*/
+@media (max-width: 576px) {
+    #main-content {
+        /* width: 100%; */
+        display: grid;
+        place-items: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .m-15 {
+        margin: 15px;
+    }
+
+    /* carousel effect on class a ends here */
+    .class-B,
+    .class-C,
+    .class-D,
+    .class-E,
+    .class-F,
+    .class-G {
+        margin: 0;
+        margin-top: 60px;
+        /* width: 100%; */
+    }
+
+    .class-b,
+    .class-e {
+        width: 90%;
+    }
+
+    .class-B,
+    .class-E {
+        justify-content: var(--justify-content-center);
+    }
+
+    .class-C {
+        font-size: .8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .class-c {
+        
+        width: 3rem;
+        height: 3rem;
+    }
+
+
+    /* class-F */
+
+    .class-F {
+        margin: 0;
+        margin-top: 60px;
+        display: inherit;
+    }
+
+    .class-F div {
+        width: 70%;
+    }
+
+    /* class-F ends here */
+
+    /* class-F */
+
+    .class-G {
+        margin: 0;
+        margin-top: 60px;
+        display: inherit;
+    }
+
+    .class-G div {
+        width: 100%;
+    }
+
+    /* class-G ends here */
+
+}
+
+/*Medium device (landscape phones, 768px and down*/
+@media (max-width: 768px) {
+
+
+    .artist-content {
+        display: block;
+    }
+
+    .artist-summary {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .artist-pic {
+        width: 100%;
+        background-size: cover;
+        height: 75vh;
+    }
+
+
+
+}
+
+/*Large device (landscape phones, 992px and down*/
+@media (max-width: 992px) {
+    .class-A .class-a {
+        margin: 30px;
+    }
+
+    .class-e {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+}
+
+/*X-Large device (landscape phones, 1200px and down*/
+@media (max-width: 1200px) {
+
+    .artist-summary {
+        margin-left: 0;
+        /* margin-right: 10px; */
+        /* width: 100%; */
+    }
+
+    .class-f,
+    .class-g {
+        margin-top: 20px;
+    }
+
+    .class-A {
+        justify-content: var(--justify-content-center);
+    }
+}
+
+/*X-Large device (landscape phones, 1550px and down*/
+@media (max-width: 1550px) {}
+
+/*media queries ends here*/

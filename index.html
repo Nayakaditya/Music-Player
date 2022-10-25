@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <title>Aditya Music Player</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <script src="https://kit.fontawesome.com/4bfb5306a3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- section 1 -->
+    <section id="navbar">
+        <nav class="navbar navbar-dark opacity-100 navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#"><img src="images/logo-90-99.png" alt="Logo" height="70px"
+                        width="62px"><span class="opacity-75">Aditya </span><span style="font-weight: 700;">
+                        Studio</span>
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Favourites</a>
+                        </li>
+                    </ul>
+                    <form class="search-music" role="search">
+                        <input class="me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+
+                    <span class="notification-bell-icon">
+                        <i class="fa-solid fa-bell"></i>
+                    </span>
+
+                    <div class="profile-picture-navbar">
+                        <img src="images/Aditya.png" alt="" height="62px" width="62px">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- section 2  -->
+    <section id="main-content">
+        <!-- main starts -->
+        <main>
+            <div id="main-container">
+                <div class="d-none d-md-block" id="figure-container">
+                    <figure>
+                        <span class="ca-img">
+                            <img src="https://cdns-images.dzcdn.net/images/cover/9b47ec3962b3ba740e3adf9ce99d275c/264x264.jpg"
+                            alt="" width="100%">
+                        </span>
+                        <span class="ca-img">
+                            <img src="https://cdns-images.dzcdn.net/images/cover/9b47ec3962b3ba740e3adf9ce99d275c/264x264.jpg"
+                            alt="" width="100%">
+                        </span>
+                        <span class="ca-img">
+                            <img src="https://cdns-images.dzcdn.net/images/cover/9b47ec3962b3ba740e3adf9ce99d275c/264x264.jpg"
+                            alt="" width="100%">
+                        </span>
+                    </figure>
+                </div>
+                <div class="class-A d-block d-md-none">
+
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="https://cdns-images.dzcdn.net/images/cover/9b47ec3962b3ba740e3adf9ce99d275c/264x264.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://m.media-amazon.com/images/I/41pQt6bZfWL._UXNaN_FMjpg_QL85_.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="https://media.publit.io/file/w_300,h_300,c_fill,q_80/forever-young-3.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+               <!-- second-screen Class-B -->
+               <div class="class-B-container text-white">
+                <h1 class="latest-release">Latest Release</h1>
+                <div class="class-B">
+                    <div class="class-b" id="id-1">
+                        <div class="artist-img">
+                            <a href="#footer-section">
+                                <img src="https://yaay.today/__export/1605103903330/sites/yaay/img/2020/11/11/cardi-b-3.jpg_264373278.jpg"
+                            alt="f" width="100%">
+                            </a>
+                        </div>
+                        <span class="mx-1">
+                            <h4 class="fs-5">Tomorrow 2</h4>
+                            <address>SEP 21, 2022</address>
+                        </span>
+                        <span class="more-rating">
+                            <div class="dropdown listing-menu">
+                                <a class="dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-play"></i>
+                                    <li><a class="dropdown-item" href="#">Play</a></li>
+                                  </span>
+                                  
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <li><a class="dropdown-item" href="#">Add To Queue</a></li>
+                                  </span>
+                        
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <li><a class="dropdown-item" href="#">Add To Favourites</a></li>
+                                  </span>
+                        
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <li><a class="dropdown-item" href="#">Get Info</a></li>
+                                  </span>
+                                </ul>
+                              </div>
+                            <p>4.4</p>
+                        </span>
+
+                    </div>
+                    <div class="class-b" id="id-2">
+                            <div class="artist-img">
+                                <a href="#footer-section">
+                                    <img src="https://i.scdn.co/image/ab6761610000e5eb727a2ac15afe659be999beba" alt="f"
+                            width="100%">
+                                </a>
+                            </div>
+                        <span class="mx-1">
+                            <h4 class="fs-5">Kiss me More</h4>
+                            <address>APR 9, 2021</address>
+                        </span>
+                        <span class="more-rating">
+                            <div class="dropdown listing-menu">
+                                <a class="dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-play"></i>
+                                    <li><a class="dropdown-item" href="#">Play</a></li>
+                                  </span>
+                                  
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <li><a class="dropdown-item" href="#">Add To Queue</a></li>
+                                  </span>
+                        
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <li><a class="dropdown-item" href="#">Add To Favourites</a></li>
+                                  </span>
+                        
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <li><a class="dropdown-item" href="#">Get Info</a></li>
+                                  </span>
+                                </ul>
+                              </div>
+                            <p>4.5</p>
+                        </span>
+                    </div>
+                    <div class="class-b" id="id-3">
+
+                        <div class="artist-img">
+                            <a href="#footer-section">
+                                <img src="https://c.saavncdn.com/839/Sun-Bhi-Le-Hindi-2021-20211129092349-500x500.jpg"
+                                alt="f" width="100%">
+                            </a>
+                        </div>
+                        
+                        <span class="mx-1">
+                            <h4 class="fs-5">Sun Bhi Le</h4>
+                            <address>OCT 9, 2022</address>
+                        </span>
+                        <span class="more-rating">
+                            <div class="dropdown listing-menu">
+                                <a class="dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-play"></i>
+                                    <li><a class="dropdown-item" href="#">Play</a></li>
+                                  </span>
+                                  
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <li><a class="dropdown-item" href="#">Add To Queue</a></li>
+                                  </span>
+                        
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <li><a class="dropdown-item" href="#">Add To Favourites</a></li>
+                                  </span>
+                        
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <li><a class="dropdown-item" href="#">Get Info</a></li>
+                                  </span>
+                                </ul>
+                              </div>
+                            <p>4.8</p>
+                        </span>
+                    </div>
+                    <div class="class-b" id="id-4">
+
+                        <div class="artist-img">
+                            <a href="#footer-section">
+                                <img src="https://images.genius.com/ec1df125fd46ec3ef56f228df021a8cd.1000x1000x1.jpg" alt="f"
+                        width="100%">
+                            </a>
+                        </div>
+                        <span class=" mx-1">
+                            <h4 class="fs-5">Symphony</h4>
+                            <address>AUG 9, 2022</address>
+                        </span>
+                        <span class="more-rating">
+                            <div class="dropdown listing-menu">
+                                <a class="dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-play"></i>
+                                    <li><a class="dropdown-item" href="#">Play</a></li>
+                                  </span>
+                                  
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <li><a class="dropdown-item" href="#">Add To Queue</a></li>
+                                  </span>
+                        
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                    <li><a class="dropdown-item" href="#">Add To Favourites</a></li>
+                                  </span>
+                        
+                                  <span class="dropdown-menu-listing">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <li><a class="dropdown-item" href="#">Get Info</a></li>
+                                  </span>
+                                </ul>
+                              </div>
+                            <p>4.1</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- third-screen Class-C -->
+                <div class="class-C-container text-white">
+                    <h1 class="popular-artist">Popular Artist</h1>
+                    <div class="class-C">
+                        <div>
+                            <a href="singlePlaylistPage.html">
+                                <div class="class-c" id="id-1"></div>
+                            </a>
+                            <h5 class="text-center">Ed Shreen</h5>
+                        </div>
+                        <div>
+                            <a href="singlePlaylistPage.html">
+                                <div class="class-c" id="id-2"></div>
+                            </a>
+                            <h5 class="text-center">ColdPlay</h5>
+                        </div>
+                        <div>
+
+                            <a href="singlePlaylistPage.html">
+                                <div class="class-c" id="id-3"></div>
+                            </a>
+                            <h5 class="text-center">Zayn</h5>
+                        </div>
+                        <div>
+                            <a href="singlePlaylistPage.html">
+                                <div class="class-c" id="id-4"></div>
+                            </a>
+                            <h5 class="text-center">Charlie Puth </h5>
+                        </div>
+                        <div>
+                            <a href="singlePlaylistPage.html">
+                                <div class="class-c" id="id-5"></div>
+                            </a>
+                            <h5 class="text-center">Imagine Dragons</h5>
+                        </div>
+                        <div>
+                            <a href="singlePlaylistPage.html">
+                                <div class="class-c" id="id-6"></div>
+                            </a>
+                            <h5 class="text-center">Bruno Mars</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third-screen Class-D -->
+                <div class="class-D  text-center">
+                    <div class="class-d " id="id-1"></div>
+
+                    <div class="class-d" id="id-2"><span class="text-white fs-5">Love</span></div>
+
+                    <div class="class-d" id="id-3"><span class="text-white fs-5">Retro</span></div>
+
+                    <div class="class-d" id="id-4"><span class="text-dark fs-5">Chill</span></div>
+
+                    <div class="class-d" id="id-5"><span class="text-white fs-5">Workout</span></div>
+
+                    <div class="class-d" id="id-6"></div>
+
+                    <div class="class-d" id="id-7"><span class="text-white fs-5">Pop</span></div>
+                </div>
+
+                <!-- fifth-screen class-E -->
+                <!-- top-most-screen  class-A -->
+                <div class="class-E text-center">
+                    <div class="class-e" id="id-1">
+                        <div class="inner-div">
+                            <span>
+                                Party
+                            </span>
+                        </div>
+                    </div>
+                    <div class="class-e" id="id-2">
+                        <div class="inner-div">
+                            <span>
+                                Electronic
+                            </span>
+                        </div>
+                    </div>
+                    <div class="class-e" id="id-3">
+                        <div class="inner-div">
+                            <span>
+                                Road Trip
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second-screen Class-F -->
+                <div class="class-F-container text-white">
+                    <h1 class="latest-eng-hindi-heading">Latest English</h1>
+                    <div class="class-F">
+                        <div>
+                            <div class="class-f" id="id-1">
+                                <img src="https://i.scdn.co/image/ab6761610000e5eb29da45fd16f4b249be105618" alt="" width="100%">
+                            </div>
+                            <span>
+                                <h6>The Drum</h6>
+                                <address>OCT 15, 2022</address>
+                            </span>
+                        </div>
+                        <div>
+                            <div class="class-f" id="id-2">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_lNAfP7-u8kBK8CCJGLe3cxuRAcVdLfhTxi5_x6GkQ&s"  alt="" width="100%">
+                            </div>
+                            <span>
+                                <h6>Tomorrow 2</h6>
+                                <address>SEP 21, 2022</address>
+                            </span>
+                        </div>
+                        <div>
+                            <div class="class-f" id="id-3">
+                                <img src="https://i.scdn.co/image/ab6761610000e5eb727a2ac15afe659be999beba" alt="" width="100%">
+                            </div>
+                            <span>
+                                <h6>Vegas</h6>
+                                <address>JUN 12, 2022</address>
+                            </span>
+                        </div>
+                        <div>
+                            <div class="class-f" id="id-4">
+                                <img src="https://images.genius.com/ec1df125fd46ec3ef56f228df021a8cd.1000x1000x1.jpg" alt="" width="100%">
+                            </div>
+                            <span>
+                                <h6>I Don't Like Me</h6>
+                                <address>SEP 24, 2022</address>
+                            </span>
+                        </div>
+                        <div>
+                            <div class="class-f" id="id-5">
+                                <img src="https://i.scdn.co/image/ab6761610000e5ebe8637c96a7aa2917eae3c54d" alt="" width="100%">
+                            </div>
+                            <span>
+                                <h6>Unstoppable</h6>
+                                <address>SEP 28, 2021</address>
+                            </span>
+                        </div>
+                        <div>
+                            <div class="class-f" id="id-6">
+                                <img src="https://i1.sndcdn.com/avatars-rgKRgFwwwQaf8zDP-s4W3vQ-t500x500.jpg" alt="" width="100%">
+                            </div>
+                            <span>
+                                <h6>Sech-Para Siem</h6>
+                                <address>SEP 8, 2022</address>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- second-screen Class-G -->
+                <div class="class-G-container text-white">
+                    <h1 class="latest-eng-hindi-heading">Latest Hindi</h1>
+                    <div class="class-G">
+                        <div>
+                            <div class="class-g" id="id-1"></div>
+                            <span>
+                                <h6>Ki Kariye</h6>
+                                <address>OCT 6, 2022</address>
+                            </span>
+                        </div>
+
+                        <div>
+                            <div class="class-g" id="id-2"></div>
+                            <span>
+                                <h6>Gunehgaar</h6>
+                                <address>SEP 14, 2022</address>
+                            </span>
+                        </div>
+
+                        <div>
+                            <div class="class-g" id="id-3"></div>
+                            <span>
+                                <h6>Sun Bhi Le</h6>
+                                <address>JUN 6, 2022</address>
+                            </span>
+                        </div>
+
+                        <div>
+                            <div class="class-g" id="id-4"></div>
+                            <span>
+                                <h6>Baawla</h6>
+                                <address>JUL 28, 2022</address>
+                            </span>
+                        </div>
+
+                        <div>
+                            <div class="class-g" id="id-5"></div>
+                            <span>
+                                <h6>Dhol Bajaa</h6>
+                                <address>SEP 23, 2022</address>
+                            </span>
+                        </div>
+
+                        <div>
+                            <div class="class-g" id="id-6"></div>
+                            <span>
+                                <h6>Pyaar Pyaar</h6>
+                                <address>MAY 24, 2022</address>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main ends -->
+
+        <!-- aside starts -->
+        <aside>
+            <div class="queue-heading">
+                <span class="fs-3 fw-semibold queue-word">Queue</span>
+                
+            
+                    <div class="dropdown listing-menu">
+                        <a class="dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="queue">queue </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <span class="dropdown-menu-listing">
+                            <a class="dropdown-item text-dark fw-semibold" href="#">Playlist</a></li>
+                          </span>
+                          
+                          <span class="dropdown-menu-listing">
+                            <a class="dropdown-item text-dark fw-semibold" href="#">Favourite Songs</a></li>
+                          </span>
+                        </ul>
+                      </div>
+
+            
+            </div>
+            <div id="aside-container" class="text-white">
+                <div class="class-Z">
+                    <div class="class-z">
+                        <span class="num center-align">01</span>
+                        <span class="center-align"><img
+                                src="https://cdn.celpox.com/bby_uploads/celeb/5ab8baa88e5b54d2e2ce62913d8f23b9.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">02</span>
+                        <span class="center-align"><img
+                                src="https://i.scdn.co/image/ab6761610000e5eb29da45fd16f4b249be105618" alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">03</span>
+                        <span class="center-align"><img
+                                src="https://i.scdn.co/image/ab6761610000e5ebe8637c96a7aa2917eae3c54d" alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">04</span>
+                        <span class="center-align"><img
+                                src="https://images.genius.com/ec1df125fd46ec3ef56f228df021a8cd.1000x1000x1.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">05</span>
+                        <span class="center-align"><img
+                                src="https://images.genius.com/ec1df125fd46ec3ef56f228df021a8cd.1000x1000x1.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">06</span>
+                        <span class="center-align"><img
+                                src="https://i.scdn.co/image/ab6761610000e5eb29da45fd16f4b249be105618" alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">07</span>
+                        <span class="center-align"><img
+                                src="https://cdn.celpox.com/bby_uploads/celeb/5ab8baa88e5b54d2e2ce62913d8f23b9.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">08</span>
+                        <span class="center-align"><img
+                                src="https://cdn.celpox.com/bby_uploads/celeb/5ab8baa88e5b54d2e2ce62913d8f23b9.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">09</span>
+                        <span class="center-align"><img
+                                src="https://yaay.today/__export/1605103903330/sites/yaay/img/2020/11/11/cardi-b-3.jpg_264373278.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">10</span>
+                        <span class="center-align"><img
+                                src="https://yaay.today/__export/1605103903330/sites/yaay/img/2020/11/11/cardi-b-3.jpg_264373278.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">11</span>
+                        <span class="center-align"><img
+                                src="https://cdn.celpox.com/bby_uploads/celeb/5ab8baa88e5b54d2e2ce62913d8f23b9.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">12</span>
+                        <span class="center-align"><img
+                                src="https://yaay.today/__export/1605103903330/sites/yaay/img/2020/11/11/cardi-b-3.jpg_264373278.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+                    <div class="class-z">
+                        <span class="num center-align">01</span>
+                        <span class="center-align"><img
+                                src="https://cdn.celpox.com/bby_uploads/celeb/5ab8baa88e5b54d2e2ce62913d8f23b9.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">02</span>
+                        <span class="center-align"><img
+                                src="https://i.scdn.co/image/ab6761610000e5eb29da45fd16f4b249be105618" alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">03</span>
+                        <span class="center-align"><img
+                                src="https://i.scdn.co/image/ab6761610000e5ebe8637c96a7aa2917eae3c54d" alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">04</span>
+                        <span class="center-align"><img
+                                src="https://images.genius.com/ec1df125fd46ec3ef56f228df021a8cd.1000x1000x1.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">05</span>
+                        <span class="center-align"><img
+                                src="https://images.genius.com/ec1df125fd46ec3ef56f228df021a8cd.1000x1000x1.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">06</span>
+                        <span class="center-align"><img
+                                src="https://i.scdn.co/image/ab6761610000e5eb29da45fd16f4b249be105618" alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">07</span>
+                        <span class="center-align"><img
+                                src="https://cdn.celpox.com/bby_uploads/celeb/5ab8baa88e5b54d2e2ce62913d8f23b9.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                    <div class="class-z">
+                        <span class="num center-align">08</span>
+                        <span class="center-align"><img
+                                src="https://cdn.celpox.com/bby_uploads/celeb/5ab8baa88e5b54d2e2ce62913d8f23b9.jpg"
+                                alt=""></span>
+                        <span class="queue-singer center-align">
+                            <h6>hello</h6>
+                            <address class="lightgrey-color">singer name</address>
+                        </span>
+                        <span class="heart-icon center-align"><i class="fa-regular fa-heart"></i></span>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+        <!-- aside ends -->
+    </section>
+
+
+<section id="footer-section">
+        <footer>
+            <div class="active-song">
+                <!-- song image -->
+                <div id="song-img">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273ef0d4234e1a645740f77d59c" alt="">
+                </div>
+                <!-- song description -->
+                <div class="song-desc">
+                    <div>Despacito</div>
+                    <div>Luis Fonsi</div>
+                </div>
+                <!-- song related icons -->
+                <div class="song-icons">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-solid fa-ban"></i></span>
+                </div>
+            </div>
+            <div class="music-player">
+                <div class="controls">
+                    <div>
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-backward-step"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-pause"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-forward-step"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                </div>
+                <div id="slider">
+                    <div class="time">0:00</div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                    <div class="time">5:07</div>
+                </div>
+            </div>
+            <div class="extra">
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="slidecontainer" style="width: 30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top: 0px;"></div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
